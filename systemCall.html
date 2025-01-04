@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Mohamed Harby Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>My Portfolio</h1>
+						<p>I am eager to gather and evaluate data to safeguard individuals and organisations.<br />
+							 My career goal is to become a digital forensics professional in the field of cyber security.</p>
+					
+					</div>
+
+				<!-- Header -->
+					
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Projects</a></li>
+							<li class="active"><a href="systemCall.html">System Calls Programs</a></li>
+							
+						</ul>
+						<ul class="icons">
+							<li><a href="https://linkedin.com/in/mohamed-harby-aa7475167" class="icon brands fa-linkedin" target="_blank" ><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/MohamedHarby913" class="icon brands fa-github" target="_blank" ><span class="label" >GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+                        <style>
+                            .block-left-image {
+                              width: 600px;  /* Adjust width as needed */
+                              display: block;
+                              margin: 20px 0;  /* Space between images */
+                            }
+                          </style>
+						<!-- Featured Post -->
+							<article class="post featured">
+								
+									<h1 >Process Synchronization<br />
+									</h1>
+									<p align="left" >This C program simulates a multiprocessor environment by creating multiple threads, each representing a CPU-bound process. The primary objective is to handle process synchronization efficiently to prevent race conditions and ensure that processes execute in an organized manner. Each thread simulates a unique CPU process that performs computations or tasks for a random or predefined duration.
+
+                                        The program leverages POSIX threads (Pthreads) and synchronization primitives such as mutexes and semaphores to manage critical sections and shared resources, ensuring threads do not interfere with one another. This synchronization is crucial for maintaining data consistency and avoiding deadlocks.
+                                        
+                                        At the end of execution, the program calculates and displays key performance metrics, including the total number of processes executed, average wait time, and average turnaround time. These results provide insight into the efficiency of the simulated CPU scheduler and the effectiveness of the synchronization mechanisms used.
+                                        
+                                        This project offers valuable hands-on experience in multithreading, process synchronization, and performance evaluation, reinforcing core concepts in operating systems and parallel computing. </p>
+								
+								<h3 align="left"> </h3>
+								<img src="images/start.png" alt=""  class="block-left-image" />
+                                <img src="images/finish.png" alt=""  class="block-left-image" />
+                                <img src="images/result.png" alt=""  class="block-left-image" />
+
+                                <h3 align="left">For the source code and more details: 
+									<a href="https://github.com/MohamedHarby913/Process-Synchronization" class="button" style="display: inline-block; margin-left: 10px;" target="_blank">GitHub</a>
+								</h3>
+
+                                <h1 style="margin-top: 200px;">Reverser Program<br /></h1>
+
+                                </h1>
+                                
+								
+
+                               
+								<p align="left" >This C program demonstrates inter-process communication (IPC) and process control by utilizing system calls exclusively to read, manipulate, and write data between a parent and child process. The program begins by reading the contents of a file using the open(), read(), and close() system calls. After successfully retrieving the file data, the parent process creates a child process using fork().
+
+                                    A unidirectional pipe is established between the parent and child process using the pipe() system call, enabling data transfer. The parent writes the file's contents to the pipe, and the child process, after executing exec() to load a reverser program, reads this data. The child process reverses the data and sends it back to the parent through the pipe.
+                                    
+                                    Upon receiving the reversed data, the parent process writes it to a new output file using open(), write(), and close(). This program emphasizes process synchronization, efficient data handling, and the application of low-level IPC techniques, all while adhering strictly to system calls without relying on standard library functions. It provides a hands-on approach to understanding the fundamentals of process management, file I/O, and inter-process communication in Linux-based systems.  </p>
+                                   
+								
+									 <img src="images/firstFile.png" alt=""  class="block-left-image" />
+									 <img src="images/command.png" alt=""  class="block-left-image" />
+                                     <img src="images/secondFile.png" alt=""  class="block-left-image" />
+								<h3 align="left">For the source code and more details: 
+									<a href="https://github.com/MohamedHarby913/Reverser-Program" class="button" style="display: inline-block; margin-left: 10px;" target="_blank">GitHub</a>
+								</h3>
+								
+									
+							</article>
+
+						<!-- Posts -->
+							
+						<!-- Footer -->
+							<footer>
+							
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						
+						
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
